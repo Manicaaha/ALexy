@@ -1,59 +1,118 @@
-html{
+html {
     background-color: dimgrey;
     color: white;
+    font-family: Arial, sans-serif;
 }
 
-nav{
+body {
+    margin: 0;
+}
+
+nav {
     background-color: rgb(52, 51, 50);
     text-align: center;
-    padding: 0.3%;
+    padding: 10px;
     border-radius: 30px;
     margin: 2%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-h1{
+h1 {
     font-size: 280%;
 }
-nav p{
+
+nav p {
     font-size: 150%;
 }
-.alexy{
-    width: 50%;
-    padding-left: 25%;
-}
-.container{
-    clear: both;
+
+.container {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    margin: 3%;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+}
+
+.left h2 {
     text-align: center;
 }
-.left{
-    
-    float: left;
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
-.right{
-    float: right;
-    margin: 5%;
+
+.right img {
+    width: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
 }
-.hobbies{
+
+.hobbies {
     font-size: 150%;
     background-color: rgba(65, 63, 60, 0.53);
     text-align: center;
-    padding: 0.3%;
+    padding: 15px;
     border-radius: 30px;
-    margin: 2%;
-    margin-inline: 30%;
+    margin: 2% 20%;
 }
-.footer{
+
+.hobbies ul {
+    display: inline-block;
+    text-align: left;
+    list-style: none;
+}
+
+.hobbies li:nth-child(1)::before {
+    content: "🎸 ";
+}
+
+.hobbies li:nth-child(2)::before {
+    content: "🧱 ";
+}
+
+.hobbies li:nth-child(3)::before{
+    content: "🛹 ";
+}
+
+.footer {
     background-color: rgb(52, 51, 50);
     font-size: 130%;
     text-align: center;
-    padding: 0.3%;
+    padding: 10px;
     border-radius: 30px;
-    margin: 2%;
+    margin: 1%;
 }
-.footer a{
-    color: rgb(72, 143, 194);
+
+.footer a {
+    color: rgb(120, 190, 240);
 }
-.footer a:hover{
-    margin-bottom: 3%;
+
+.footer a:hover {
+    color: rgb(120, 205, 231);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.left {
+    flex: 1 1 300px;
+}
+
+.right {
+    flex: 1 1 220px;
+}
+
+.right img {
+    width: 220px;
 }
